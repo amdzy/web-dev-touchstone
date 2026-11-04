@@ -23,14 +23,24 @@
     <h1>Our Products</h1>
     <p>Everything is baked fresh in small batches. There is no online checkout, so stop by the shop or send us a <a href="contact.html">pre order request</a>.</p>
 
+    <section id="order-section">
+      <h2>My Pre Order List</h2>
+      <p id="order-count" aria-live="polite">Your list is empty. Click "Add to list" next to any item to start.</p>
+      <ul id="order-list"></ul>
+      <p id="order-actions" hidden>
+        <a href="contact.html" class="button-link">Send my pre order</a>
+        <button type="button" id="clear-list" class="secondary-btn">Clear list</button>
+      </p>
+    </section>
+
     <section>
       <h2>Breads</h2>
       <img src="images/bakery-bread_c.png" alt="Fresh loaves of bread on a wooden shelf" width="400">
       <ul>
-        <li><strong>Country Sourdough</strong>: Crisp crust and a tangy, open crumb. $7 to $9</li>
-        <li><strong>Whole Wheat Sandwich Loaf</strong>: Soft and hearty, great for school lunches. $6 to $8</li>
-        <li><strong>Seeded Rye</strong>: Dense and flavorful with caraway and sunflower seeds. $7 to $9</li>
-        <li><strong>French Baguette</strong>: Light, crackly, and perfect for dinner. $3 to $5</li>
+        <li><strong>Country Sourdough</strong>: Crisp crust and a tangy, open crumb. $7 to $9 <button type="button" class="add-btn" data-item="Country Sourdough" data-price="$7 to $9">Add to list</button></li>
+        <li><strong>Whole Wheat Sandwich Loaf</strong>: Soft and hearty, great for school lunches. $6 to $8 <button type="button" class="add-btn" data-item="Whole Wheat Sandwich Loaf" data-price="$6 to $8">Add to list</button></li>
+        <li><strong>Seeded Rye</strong>: Dense and flavorful with caraway and sunflower seeds. $7 to $9 <button type="button" class="add-btn" data-item="Seeded Rye" data-price="$7 to $9">Add to list</button></li>
+        <li><strong>French Baguette</strong>: Light, crackly, and perfect for dinner. $3 to $5 <button type="button" class="add-btn" data-item="French Baguette" data-price="$3 to $5">Add to list</button></li>
       </ul>
 
       <figure>
@@ -43,19 +53,19 @@
       <section>
         <h2>Pastries</h2>
         <ul>
-          <li><strong>Butter Croissant</strong>: Flaky layers made with real butter. $3 to $4</li>
-          <li><strong>Cinnamon Roll</strong>: Soft, swirled, and topped with cream cheese icing. $4 to $5</li>
-          <li><strong>Seasonal Fruit Danish</strong>: Filled with fruit from local farms. $4 to $5</li>
-          <li><strong>Morning Muffins</strong>: Blueberry, banana nut, or lemon poppy seed. $3 to $4</li>
+          <li><strong>Butter Croissant</strong>: Flaky layers made with real butter. $3 to $4 <button type="button" class="add-btn" data-item="Butter Croissant" data-price="$3 to $4">Add to list</button></li>
+          <li><strong>Cinnamon Roll</strong>: Soft, swirled, and topped with cream cheese icing. $4 to $5 <button type="button" class="add-btn" data-item="Cinnamon Roll" data-price="$4 to $5">Add to list</button></li>
+          <li><strong>Seasonal Fruit Danish</strong>: Filled with fruit from local farms. $4 to $5 <button type="button" class="add-btn" data-item="Seasonal Fruit Danish" data-price="$4 to $5">Add to list</button></li>
+          <li><strong>Morning Muffins</strong>: Blueberry, banana nut, or lemon poppy seed. $3 to $4 <button type="button" class="add-btn" data-item="Morning Muffins" data-price="$3 to $4">Add to list</button></li>
         </ul>
       </section>
 
       <section>
         <h2>Cakes</h2>
         <ul>
-          <li><strong>Celebration Cakes</strong>: Custom cakes for birthdays and parties. $35 to $80</li>
-          <li><strong>Wedding and Event Cakes</strong>: Tiered cakes designed with you. $150 and up</li>
-          <li><strong>Cupcakes</strong>: Sold by the dozen in classic and seasonal flavors. $24 to $36</li>
+          <li><strong>Celebration Cakes</strong>: Custom cakes for birthdays and parties. $35 to $80 <button type="button" class="add-btn" data-item="Celebration Cakes" data-price="$35 to $80">Add to list</button></li>
+          <li><strong>Wedding and Event Cakes</strong>: Tiered cakes designed with you. $150 and up <button type="button" class="add-btn" data-item="Wedding and Event Cakes" data-price="$150 and up">Add to list</button></li>
+          <li><strong>Cupcakes</strong>: Sold by the dozen in classic and seasonal flavors. $24 to $36 <button type="button" class="add-btn" data-item="Cupcakes" data-price="$24 to $36">Add to list</button></li>
         </ul>
         <p>Custom cakes need at least 3 days notice. <a href="contact.html">Send us a request</a>.</p>
       </section>
@@ -65,5 +75,7 @@
   <footer>
     <p>&copy; 2026 North Star Bakery. Baked with love in our neighborhood.</p>
   </footer>
+
+  <script src="js/order-list.js"></script>
 </body>
 </html>
